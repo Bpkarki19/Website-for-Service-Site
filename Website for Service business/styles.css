@@ -266,11 +266,6 @@ button {
     border-radius: 6px;
   }
 
-  .hide-on-small-screen {
-  display: flex; /* Hide on small screens */}
-
-  .show-on-small-screen {
-    display: none;
-  }
+  
   
 }
