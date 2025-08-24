@@ -7,39 +7,39 @@
     <title>CPS Services</title>
   </head>
   <body>
-    <!-- Header Block -->
+    <!-- Header Block ----------------HAM_BURGER______ AND________ CPS_LOGO------------------- -->
     <header class="header">
       <div class="header__left">
-        <button class="icon-button hide-on-extra-large">
+        <button class="icon-button show-on-tablet">
           <img src="./images/ham_burger.svg" alt="Menu" />
         </button>
-        <div class="divider hide-on-extra-large"></div>
+        <div class="divider show-on-tablet"></div>
         <img
-          class="header__logo hide-on-extra-large"
+          class="header__logo show-on-tablet"
           src="./images/cps_logo.svg"
           alt="CPS Logo"
         />
       </div>
 
       <div class="header__right">
-        <!-- modifier classes for hiding icons for mobile screen-->
-        <button class="icon-button show-on-desktop">
+        <!-- _________call-icon______________chat-icon__________profile-icon_____________-->
+        <button class="icon-button hide-on-mobile  show-on-tablet">
           <img src="./images/call.svg" alt="Call" />
         </button>
-        <button class="icon-button show-on-desktop">
+        <button class="icon-button hide-on-mobile show-on-tablet">
           <img src="./images/chat.svg" alt="Chat" />
         </button>
-        <button class="icon-button show-on-desktop">
+        <button class="icon-button hide-on-mobile show-on-tablet">
           <img src="./images/profile.svg" alt="Profile" />
         </button>
 
-        <!-- divider -->
+        <!-- ____________divider____________repair-icon____________search-icon_______________________________________ -->
         <div class="divider show-on-desktop"></div>
-        <span class="label-for-xl_sreen">Leave a request</span>
+        <span class="show-on-desktop">Leave a request</span>
         <button class="icon-button">
           <img src="./images/ic_repair.svg" alt="Repair Status" />
         </button>
-        <span class="label-for-xl_sreen">Repair Status</span>
+        <span class="show-on-desktop">Repair Status</span>
         <button class="icon-button">
           <img src="./images/search_icon.svg" alt="Search" />
         </button>
@@ -51,12 +51,12 @@
       <div class="sub-header">
         <h1 class="main-title">Services</h1>
 
-        <div class="icons-for-extra-large">
-          <span class="label-for-xl_sreen">Leave a request</span>
+        <div class="show-on-desktop">
+          <span class="show-on-desktop">Leave a request</span>
           <button class="icon-button">
             <img src="./images/ic_repair.svg" alt="Repair Status" />
           </button>
-          <span class="label-for-xl_sreen">Repair Status</span>
+          <span class="show-on-desktop">Repair Status</span>
           <button class="icon-button">
             <img src="./images/search_icon.svg" alt="Search" />
           </button>
@@ -70,9 +70,9 @@
         <button class="tab-button">Pricing</button>
         <button class="tab-button">Special Offers</button>
         <button class="tab-button">Our Locations</button>
+        <button class="tab-button">Special price</button>
+        <button class="tab-button">Reviews</button>
       </nav>
-
-      <span class="show-on-extra-large">Reviews</span>
 
       <!-- content block -->
       <div class="content-block">
@@ -84,14 +84,26 @@
           </p>
           <p>
             We have been successfully operating since 1992 and have earned a
-            reputation as a reliable partner.
+            reputation as a reliable partner. We have all the necessary
+            certificates and licenses to carry out repair work on Dell
+            equipment.
+            <span class="show-on-desktop show-on-tablet">
+              Our specialists undergo regular training and certification at the
+              manufacturer's training centers, which allows us to keep up to
+              date with the latest technologies and methods of repairing Dell
+              equipment.
+            </span>
           </p>
           <a href="#" class="read-more">
             <img src="./images/expand_arrow.svg" alt="expand" /> Read More
           </a>
         </div>
         <div class="image-section">
-          <img class="content-image" src="./images/image.png" alt="CPS Office Sign" />
+          <img
+            class="content-image"
+            src="./images/image.png"
+            alt="CPS Office Sign"
+          />
         </div>
       </div>
     </main>

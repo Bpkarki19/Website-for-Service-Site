@@ -1,5 +1,6 @@
 /* --- Global & Reset Styles --- */
 body {
+  padding: 0;
   margin: 0;
   font-family: 'TT Lakes', 'Arial', sans-serif;
   background-color: #f8f8f8;
@@ -9,6 +10,7 @@ body {
 
 button {
   cursor: pointer;
+  
 }
 
 /* --- Header Styles --- */
@@ -46,21 +48,15 @@ button {
 }
 
 /*for mobile screen*/
-.show-on-desktop {
+.show-on-desktop, .hide-on-mobile {
   display: none; 
 }
 
-.show-on-extra-large {
-  display: none;
+.show-on-mobile {
+  display: flex; 
 }
 
-.label-for-xl_sreen {
-    display: none;
-  }
 
-.icons-for-extra-large {
-  display: none;
-}
 
 .divider {
   width: 1px;
@@ -71,7 +67,7 @@ button {
 
 /* --- Main Content Styles --- */
 .main-content {
-  padding: 24px;
+  padding: 0px;
 }
 
 .main-title {
@@ -87,12 +83,13 @@ button {
 .main-title::before {
   content: '';
   position: absolute;
-  left: -16px; /* position outside of padding so that it aligns with mobile screen edge*/
+  left: 0px; /* position outside of padding so that it aligns with mobile screen edge*/
   top: 0;
   width: 4px;
   height: 100%;
   background-color: #41f6d7;
   border-radius: 0 4px 4px 0;
+  padding-left: 2px;
 }
 
 /* --- Navigation Tabs Styles --- */
@@ -102,6 +99,7 @@ button {
   overflow-x: auto; /* for scrolling form left to right */
   padding-bottom: 16px; /* Space for scrollbar */
   margin-bottom: 24px;
+  padding-left: 12px; /* Aligns with main title */
 }
 
 
@@ -149,6 +147,7 @@ button {
   min-width: 300px; /* Prevents it from getting too squished */
   font-size: 14px;
   line-height: 1.4;
+  padding-left: 12px; /* Aligns with main title */
 }
 
 .read-more {
@@ -163,22 +162,35 @@ button {
 
 .image-section {
   flex: 1; /* Allows image section to grow */
-  min-width: 300px;
+  
+  
 }
 
 .content-image {
-  width: 100%;
+  
   height: auto;
-  border-radius: 6px;
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  max-width: 100%; /* Ensures it doesn't exceed container width */
+  width: 100%; /* Ensures it takes full width */
+  
+  
 }
+
+
+
 
 @media (min-width: 768px) {
   body{
     min-width: 768px; /* For larger screens */
   }
 
-  .show-on-desktop {
+  .show-on-tablet {
     display: flex; /* Show icons on larger screens */
+  }
+
+  .show-on-mobile{
+    display: none;
   }
 
   .main-title::before {
@@ -188,6 +200,17 @@ button {
   .content-block {
     flex-direction: row;
     gap: 32px; /* For tablet screen */
+  }
+
+  .content-image{
+    border-radius: 6px;
+  }
+
+  .hide-on-small-screen {
+  display: flex; /* Hide on small screens */
+}
+.show-on-small-screen {
+    display: none;
   }
 
 }
@@ -210,27 +233,22 @@ button {
   }
 
   .show-on-desktop {
-    display: none; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
   }
 
-  .hide-on-extra-large {
-    display: none; /* Hide on extra large i.e burger and logo*/
+.show-on-mobile{
+    display: none;
   }
 
-  .show-on-extra-large {
-    display: flex; /* Show on extra large */
-  }
-
-  .label-for-xl_sreen {
-    display: flex;
-  }
+  
 
   .icons-for-extra-large {
     display: flex;
-    flex-direction: row; /* Show icons on extra large screens */
-    justify-content: center;
-    align-items: center;
-    gap: 16px; /* Space between icons */
+     /* Space between icons */
   }
 
 
@@ -242,6 +260,17 @@ button {
   .tab-button {
     padding: 12px 24px; /* Larger padding for tab buttons */
     font-size: 18px; /* Larger font size for tab buttons */
+  }
+
+  .content-image {
+    border-radius: 6px;
+  }
+
+  .hide-on-small-screen {
+  display: flex; /* Hide on small screens */}
+
+  .show-on-small-screen {
+    display: none;
   }
   
 }
