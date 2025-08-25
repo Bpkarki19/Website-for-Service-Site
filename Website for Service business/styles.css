@@ -121,6 +121,8 @@ button {
   color: #7e7e82;
   font-size: 16px;
   font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
   transition: all 0.2s ease-in-out;
 }
 
@@ -146,8 +148,11 @@ button {
   flex: 1; /* Allows text section to grow */
   min-width: 300px; /* Prevents it from getting too squished */
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 20px;
   padding-left: 12px; /* Aligns with main title */
+  font-weight: 400;
+  letter-spacing: 0.2px;
+
 }
 
 .read-more {
@@ -200,18 +205,18 @@ button {
   .content-block {
     flex-direction: row;
     gap: 32px; /* For tablet screen */
+    padding-right: 20px;
   }
 
   .content-image{
     border-radius: 6px;
   }
 
-  .hide-on-small-screen {
-  display: flex; /* Hide on small screens */
-}
-.show-on-small-screen {
-    display: none;
-  }
+
+
+
+
+
 
 }
 
@@ -228,6 +233,7 @@ button {
     display: flex; /* Show sub-header on extra large screens */
     justify-content: space-between;
     align-items: center;
+    padding-right: 20px;
     
    
   }
@@ -264,7 +270,16 @@ button {
 
   .content-image {
     border-radius: 6px;
+ 
   }
+
+   .content-block {
+    flex-direction: row;
+    gap: 32px; /* For tablet screen */
+    padding-right: 20px;
+   }
+
+  
 
   
   
